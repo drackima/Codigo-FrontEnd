@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*se debe poner siempre porque en cada pantalla es diferente
+    por lo que deberia ser un requisito para que no salga el scroll*/
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #C3E3E6;
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+}
+input, button{
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 50px;
+}
+ form{
+    display: flex;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    gap: 30px;
+    width: 800px;
+ }
+ form > div{
+    flex: 1;
+
+ }
+.container-input{
+    display: flex;
+    align-items: center;justify-content: space-between;
+    background-color: #F3F8FB;
+    padding: 8px;
+    border-radius: 10px;
+}
+.container-input > input{
+    border: none;
+    /*remover el borde del input*/
+    outline: none;
+    text-align: right;
+    background-color: transparent;
+}
+.text-tittle{
+    font-size: 14px;
+    color: #717978;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.container-percentage{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4.9%;
+}
+.container-percentage > *{
+    
+    width: 30%;
+    margin-bottom: 4.9%;
+}
+.container-percentage > button{
+    background-color: #00474B;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.container-percentage > button:nth-child(3){
+    background-color: #26C2AE;
+    color: #004248;
+}
+.custom{
+    display: flex;
+    text-align: center;
+    border: none;
+    background-color: #F3F8FB;
+    border-radius: 6px;
+    font-size: 20px;
+}
+.color-div{
+    background-color: #00474B;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+
+}   
+.content-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: #fff;
+    
+}
+.content-2>div>p:first-child{
+    font-size: 16px;
+}
+.content-2>div>p:last-child{
+    font-size: 40px;
+    color: #2abfac;
+}
+
+.content-2>div>span{
+    color: #5b9195;
+    font-size: 10px;
+}
+
+.color-div > div > button{
+    background-color: #2abfac;
+    color: #00474b;
+    border: none;
+    padding: 10px;
+    width: 90%;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 60px;
+    font-size: 18px;
+    margin-left: 5%;
+}
+
+
