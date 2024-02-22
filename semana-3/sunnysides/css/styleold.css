@@ -1,0 +1,252 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Fraunces", sans-serif;
+  }
+  
+  .font-barlow {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  /*clase del navegador*/
+  .nav {
+    background-color: rgb(62, 190, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  /*clase del boton*/
+  .btn-menu {
+    /*para quitarle el fondo gris*/
+    background-color: transparent;
+    /*quitar el borde*/
+    border: none;
+    /*para poner el cursor encima y cambie*/
+    cursor: pointer;
+  }
+  
+  .menu {
+    display: none;
+  }
+  /*añadiendo una imagen mediante el background*/
+  main {
+    background: url("../assets/mobile/image-header.jpg");
+    /*para que la imagen no se duplique al agrandar la pagina web*/
+    background-repeat: no-repeat;
+    background-position: center;
+    /*para que crezca la imagen mediante la web*/
+    background-size: cover;
+    height: 70vh;
+  }
+  
+  h1 {
+    color: #fff;
+    text-align: center;
+    /*el texto se cambia a mayusculas*/
+    text-transform: uppercase;
+    font-size: 60px;
+    padding-top: 35px;
+  }
+  
+  .arrow-down {
+     /*usamos el block para cambiar el estado de inline a bloque*/
+    display: block;
+    margin: auto;
+    height: 160px;
+    margin-top: 35px;
+  }
+  
+  .bg-egg {
+    background: url("../assets/mobile/image-transform.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+  }
+  
+  .container-egg {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px;
+  }
+  
+  .container-egg > div > h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+  }
+  
+  .container-egg > div > p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: hsl(232, 10%, 55%);
+  }
+  
+  .link {
+    text-transform: uppercase;
+    margin-top: 20px;
+    display: block;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .bg-copa{
+    background: url(../assets/mobile/image-stand-out.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+  }
+  .container-copa{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px;
+  }
+  .container-copa > div > h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+  }
+  
+  .container-copa > div > p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: hsl(232, 10%, 55%);
+  }
+  
+  .link {
+    text-transform: uppercase;
+    margin-top: 20px;
+    display: block;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+  }
+  /* sm */
+  @media (min-width: 640px) {
+  }
+  
+  /* md */
+  @media (min-width: 768px) {
+  }
+  
+  /* lg */
+  @media (min-width: 1024px) {
+  }
+  
+  /* xl */
+  @media (min-width: 1280px) {
+    main {
+      background: url("../assets/desktop/image-header.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  
+    .btn-menu {
+      display: none;
+    }
+  
+    .menu {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      list-style: none;
+      font-family: "Barlow", sans-serif;
+    }
+  
+    .menu > li > a {
+      text-decoration: none;
+      color: #fff;
+    }
+  
+    .menu > li:last-child {
+      background-color: #fff;
+      padding: 10px 20px;
+      border-radius: 24px;
+    }
+  
+    .menu > li:last-child > a {
+      color: #000;
+      font-family: "Fraunces";
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 12px;
+    }
+  
+    .section-egg {
+      display: flex;
+      flex-direction: row-reverse;
+      height: 70vh;
+    }
+  
+    .bg-egg {
+      flex: 1;
+      background: url("../assets/desktop/image-transform.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+    }
+  
+    .container-egg {
+      flex: 1;
+      height: 100%;
+      padding: 0;
+    }
+  
+    .container-egg > div {
+      display: block;
+      margin: auto;
+    }
+  
+    .container-egg > div > * {
+      text-align: left;
+    }
+
+    .section-copa {
+      display: flex;
+      height: 70vh;
+    }
+  
+    .bg-copa {
+      flex: 1;
+      background: url("../assets/desktop/image-stand-out.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+    }
+  
+    .container-copa {
+      flex: 1;
+      height: 100%;
+      padding: 0;
+    }
+    .container-copa > div {
+      display: block;
+      margin: auto;
+      width: 70%;
+    }
+  
+    .container-copa > div > * {
+      text-align: left;
+    }
+  }
+  
+  /* 2xl */
+  @media (min-width: 1536px) {
+  }
